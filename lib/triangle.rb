@@ -1,3 +1,5 @@
+require pry
+
 class Triangle
   
   def initialize(side1, side2, side3)
@@ -12,6 +14,7 @@ class Triangle
     elsif (@side1 + @side2 <= @side3) || (@side1 + @side3 <= @side2) || (@side2 + @side3 <= @side1)
       true
     end
+    binding.pry
   end
     
   def kind
