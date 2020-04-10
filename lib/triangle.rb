@@ -6,6 +6,8 @@ class Triangle
     @side3 = side3
   end
   
+  def valid
+  
   def kind
     
   end
