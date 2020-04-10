@@ -18,7 +18,7 @@ class Triangle
     if invalid?
       raise TriangleError
     else
-      if @side1 == @side
+      if @side1 == @side2
   end
   
   class TriangleError < StandardError
