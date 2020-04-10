@@ -7,9 +7,9 @@ class Triangle
   end
   
   def invalid?
-    if(@side_1 <= 0) || (@side_2 <= 0) || (@side_3 <= 0)
+    if(@side1 <= 0) || (@side2 <= 0) || (@side3 <= 0)
       true
-    elsif (@side_1+@side_2 <= @side_3) || (@side_1+@side_3 <= @side_2) || (@side_2+@side_3 <= @side_1)
+    elsif (@side1 + @side2 <= @side3) || (@side1 + @side3 <= @side2) || (@side2 + @side3 <= @side1)
       true
     end
   end
@@ -18,7 +18,7 @@ class Triangle
     if invalid?
       raise TriangleError
     else
-      if 
+      if @side_1 == @side
   end
   
   class TriangleError < StandardError
