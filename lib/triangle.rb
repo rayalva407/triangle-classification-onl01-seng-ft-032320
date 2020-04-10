@@ -15,7 +15,8 @@ class Triangle
   end
     
   def kind
-    if
+    if invalid?
+      raise 
   end
   
   class TriangleError < StandardError
