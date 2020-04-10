@@ -1,5 +1,3 @@
-require 'pry'
-
 class Triangle
   
   def initialize(side1, side2, side3)
@@ -9,10 +7,15 @@ class Triangle
   end
   
   def invalid?
-    if ((@side_1 <= 0) || (@side_2 <= 0) || (@side_3 <= 0)) || ((@side_1+@side_2 <= @side_3) || (@side_1+@side_3 <= @side_2) || (@side_2+@side_3 <= @side_1))
+    if(@side_1 <= 0) || (@side_2 <= 0) || (@side_3 <= 0)
+      true
+    elsif (@side_1+@side_2 <= @side_3) || (@side_1+@side_3 <= @side_2) || (@side_2+@side_3 <= @side_1)
+      true
+    end
   end
     
   def kind
+    
   end
   
   class TriangleError < StandardError
