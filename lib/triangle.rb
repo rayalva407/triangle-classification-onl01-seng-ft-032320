@@ -20,7 +20,9 @@ class Triangle
     else
       if (@side1 == @side2) && (@side2 == @side3)
         :equilateral
-      elsif
+      elsif (@side1 == @side2) || (@side2 == @side3) || (@side3 == @side1)
+        :isosceles
+      elsif 
   end
   
   class TriangleError < StandardError
